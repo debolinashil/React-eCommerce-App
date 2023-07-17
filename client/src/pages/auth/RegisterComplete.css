@@ -1,0 +1,33 @@
+.input-style {
+  border: none;
+  border-radius: 4px;
+  border: 1px solid #013001;
+}
+
+.signin-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.register-btn {
+  background-color: #013001;
+  color: #fff;
+  width: 70%;
+}
+
+.google-btn {
+  width: 70%;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.form-title h2 {
+  margin-bottom: 50px;
+}
+
+.forgot-password {
+  font-weight: 600;
+}
