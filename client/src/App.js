@@ -17,7 +17,9 @@ import ForgotPassword from "./pages/auth/ForgotPassword";
 
 import { currentUser } from "./functions/auth";
 import Header from "./components/nav/Header";
-import UserRoutes from "./components/routes/UserRoutes";
+import UserRoute from "./components/routes/UserRoute";
+
+import AdminRoute from "./components/routes/AdminRoute";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -62,7 +64,8 @@ const App = () => {
         <Route path="/register" element={<Register />} />
         <Route path="/register/complete" element={<RegisterComplete />} />
         <Route path="/forgot/password" element={<ForgotPassword />} />
-        <Route path="/user/*" element={<UserRoutes />} />
+        <Route path="/user/*" element={<UserRoute />} />
+        <Route path="/admin/*" element={<AdminRoute />} />
       </Routes>
     </Router>
   );

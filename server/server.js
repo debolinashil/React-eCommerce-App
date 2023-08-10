@@ -32,8 +32,6 @@ mongoose
 //routes
 const port = process.env.PORT || 8000;
 
-app.use("/api", authRoutes);
-
 //routes middleware
 readdirSync("./routes").map((route) =>
   app.use("/api", require("./routes/" + route))
